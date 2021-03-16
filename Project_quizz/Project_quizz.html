@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8"/>
+<title>Berserk, Manga presentation and Quiz</title>
+<link rel="stylesheet" type="text/css" href="Images/Project_quiz.css"/>
+<script src="Images/Characters.js"></script>
+</head>
+
+
+<body>
+<div id="logo"><img src="Images/Berserk_Banner.jpg" alt="Banner of Berserk" /></div>
+<a href="Images/Project_quiz_french.html">
+<img src="Images/French_Version.png" alt="French version" class="lang_image" />
+</a>
+<h1 style="text-align: center">Berserk, a Masterpiece</h1>
+<article>
+<p><b><i>Berserk</i></b> is a manga created by Mangaka Kentaro Miura and published for the first time in the <i>Monthly Animal House</i> Magazine from 1989 till 1992 and in the <i>Young Animal</i> Magazine from 1992<br/> 
+till present day. Set in a Midieval-Europe inspired Dark Fantasy world, the story follows <b>Guts</b>, a powerful and violent warrior in his quest for vengence again the <b>Five God Hands</b>, a group of<br/>
+Demon/Gods, who are the main antagonists of the manga.</p>
+<p><b><i>Berserk</i></b> has over 40 million copies in circulation and features 40 volumes.</p>
+<br/>
+<br/>
+<div id="plot"><img src="Images/Berserk_Plot.jpg" alt="Banner of Berserk Plot" /></div>
+<h2><b>Plot</b></h2>
+<p><i><b>Berserk</b></i> tells the story of <b>Guts</b>, a mercenary who evolves in the violent world of <b>Midland</b>, a Kingdom engaged in a Hundred Year War against the <b>Tudor Empire</b>. Mercenary since his<br/>
+childhood, <b>Guts</b> catches the attention of <b>Griffith</b>, the charismatic leader of a mercenary group named "<i><b>The Band of the Hawk</b></i>". Griffith will forces <b>Guts</b> into joining him upon defeating<br/>
+him in battle. Thanks to his strength, frearless attitude and battle aptitudes, <b>Guts</b> quickly rises through the ranks of the <b>Hawks</b> and becomes the renowned raid leader and <b>Griffith</b>'s deadliest<br/> 
+subordinate. In the <b><i>Band of the Hawk</i></b> he will, for the first time in his violent life, meet people that he will consider as a family. <b>Judeau</b>, <b>Pippin</b>, <b>Rickert</b> and <b>Casca</b>, the <b>Hawks</b> only female<br/> 
+member.</p> 
+<p><b><i>The Band of the Hawk</i></b> will join the force of the Kingdom of Midland and, victories after victories, become the most famous army of the war. During this time <b>Guts</b> will learn of <b>Griffith</b><br/> 
+mysterious pendant, the Crimson Behelit, along with <b>Griffith</b>'s dream to rule a Kingdom of his own.</p>
+<br/>
+<br/>
+<br/>
+<h2><b>Characters</b></h2>
+
+<form name="characterForm" id="characterForm">
+<strong>Select a character to see information:</strong>
+<select name="characterName">
+<script type="text/javascript">
+
+for(var i = 0; i < character.length; i++) {
+    if(i==0) document.write("<option>" + character[i] + "</option>");
+	else document.write("<option>" + character[i].name + "</option>");
+}
+
+</script>
+</select>
+<input type="button" value="Select the character" onclick="var i = document.characterForm.characterName.selectedIndex; character[i].displayCharacter();"/>
+</form>
+<br/>
+<br/>
+<div id="theme"><img src="Images/Berserk_Theme.png" alt="Banner of Berserk Theme" /></div>
+<h2><b>Theme</b></h2>
+<p><b><i>Berserk</i></b> explores a wide range of theme and topics. Free will, Destiny, Human nature, Morality... are few examples of the complexity and richness of the manga. In the manga, the characters<br/> 
+always follow their will, their emotions. There is no manicheism. There is no <b>right</b> or <b>wrong</b> in <b><i>Berserk</i></b>, only Free will, emotion and violence.</p>
+<p>Friendship, Human relations and Love are also explored themes in <b><i>Berserk</i></b>. <b>Guts</b> lived a traumatic experience with the mercenary group that raised him. Since this, he has lost trust in people.<br/>
+But in <b><i>The Band of the Hawk</i></b> he has found bonds, friendship, animosities and co-dependencies, maturing as an individual. In parallel, the other characters will also evolve through their<br/> 
+interactions with <b>Guts</b>. <b>Casca</b> for example, <b>Griffith</b>'s first lieutenant, will discover that she also has a <b>Dream</b>.</p>
+<p>The Religion is also another main theme in the series. Through multiple characters, <b><i>Berserk</i></b> speaks about religious fanatism, intolerance and the antagonism between Pagan Religions and<br/>
+Monotheistic Religion.</p>
+</article>
+<br/>
+<br/>
+<br/>
+<div id="quizImage"><img src="Images/Berserk_Quiz.jpg" alt="Banner of Berserk Quiz" /></div>
+<h1><b>The Quiz</b></h1>
+<br/>
+<br/>
+<div class="grid">
+    <div id="quiz">
+        <h1>The Berserk Quiz</h1>
+        <hr style="margin-bottom: 20px">
+        <p id="question"></p>
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+            </div>
+        <hr style="margin-top: 50px">
+        <footer>
+            <p id="progress">Question x of y</p>
+        </footer>
+    </div>
+</div>
+<script src="Images/Quiz.js"></script>
+
+
+</body>
+
+
+</html>

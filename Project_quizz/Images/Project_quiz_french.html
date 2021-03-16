@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="utf-8"/>
+<title>Berserk, Presentation du Manga et Quiz</title>
+<link rel="stylesheet" type="text/css" href="Project_quiz.css">
+<script src="Character_French.js"></script>
+</head>
+
+
+<body>
+<div id="logo"><img src="Berserk_Banner.jpg" alt="Banner of Berserk" /></div>
+<a href="../Project_quizz.html">
+<img src="English_Version.png" alt="English Version" class="lang_image"/>
+</a>
+<h1 style="text-align: center">Berserk, un Chef d'Oeuvre</h1>
+<article>
+<p><b><i>Berserk</i></b> est un manga cree par Kentaro Miura et publie pour le premiere fois dans le magasine <i>Monthly Animal House</i> de 1989 a 1992 et dans le magasine <i>Young Animal</i> depuis 1992<br/> 
+jusqu'a aujourd'hui. Prenant place dans un monde de Dark Fantasy inspire par l'Europe Medievale, l'histoire suit <b>Guts</b>, un guerrier puissant et violent en quete de vengeance contre les <b>Cinqs God Hands</b>, un groupe de 
+déité demoniaque, principaux antagonistes du manga.</p>
+<p><b><i>Berserk</i></b> a vendu plus de 40 millions de copies pour 40 tomes sortis a ce jour.</p>
+<br/>
+<br/>
+<div id="plot"><img src="Berserk_Plot.jpg" alt="Banner of Berserk Plot" /></div>
+<h2><b>Scenario</b></h2>
+<p><i><b>Berserk</b></i> raconte l'histoire de <b>Guts</b>, un mercenaire evoluant dans le monde violent du <b>Midland</b>, un Royaume engage dans une guerre de cent ans contre l'<b>Empire Tudor</b>. Mercenaire depuis son<br/>
+enfance, <b>Guts</b> attire l'attention de <b>Griffith</b>, leader charismatique d'une bande de mercenaire nomme "<i><b>La Bande du Faucon</b></i>". Griffith va forcer <b>Guts</b> a le rejoindre en le defaisant<br/>
+au cours d'un duel. Grace a sa force, son attitude sans peur et ses aptitudes au combat, <b>Guts</b> va tres rapidement s'elever au seins des <b>Faucons</b> et devenir le renomme chef de la troupe de choc et<br/>
+le subordonne le plus dangereux de <b>Griffith</b>.<br/> 
+Dans la <b><i>Bande du Faucon</i></b> il va, pour la premiere fois de sa vie violente, rencontrer des gens qu'il considerera comme une famille. <b>Judeau</b>, <b>Pippin</b>, <b>Rickert</b> et <b>Casca</b>, la seule femme parmis les<br/>
+<b>Faucons</b></p> 
+<p><b><i>La Bande du Faucon</i></b> va rejoindre les forces du Royaume du Midland et va, victoires apres victoires, devenir l'armee la plus celebre de la guerre. Durant ce temps <b>Guts</b> va apprendre l'existence<br/>
+du mysterieux pendantif de <b>Griffith</b>, le Behelit Pourpre, ainsi que le but poursuivit par ce dernier, obtenir son propre Royaume.</p>
+<br/>
+<br/>
+<br/>
+<h2><b>Characters</b></h2>
+
+<form name="characterForm" id="characterForm">
+<strong>Choisi un personnage pour en apprendre plus a son sujet:</strong>
+<select name="characterName">
+<script type="text/javascript">
+
+for(var i = 0; i < character.length; i++) {
+    if(i==0) document.write("<option>" + character[i] + "</option>");
+	else document.write("<option>" + character[i].name + "</option>");
+}
+
+</script>
+</select>
+<input type="button" value="Choisi un personnage" onclick="var i = document.characterForm.characterName.selectedIndex; character[i].displayCharacter();"/>
+</form>
+<br/>
+<br/>
+<div id="theme"><img src="Berserk_Theme.png" alt="Banner of Berserk Theme" /></div>
+<h2><b>Theme</b></h2>
+<p><b><i>Berserk</i></b> explore un large eventail de Theme et Sujets. Libre arbitre, destine, nature Humaine, Moralite... ne sont que quelque exemples de la richesse du manga. Dans le manga, les personnages<br/> 
+agissent toujours en fonction de leurs reve, leurs emotions. Il n'y a pas de manicheisme. Il n'y a pas de <b>bien</b> ou de <b>mal</b> dans <b><i>Berserk</i></b>, seulement le libre arbitre, les emotions et la violence.</p>
+<p>Amitie, relation Humaine et Amour sont aussi des themes abordes dans <b><i>Berserk</i></b>. <b>Guts</b> a vecu une experience traumatique avec le groupe de mercenaire qui l'a eleve. Depuis, il a perdu toute<br/> 
+confiance en l'Homme. Mais au seins de <b><i>La Bande du Faucon</i></b> il a trouve des liens, de l'amitie, des animosites et de la co-dependance, grandissant en tant qu'individu. En parallele, les autres<br/> 
+personnages vont aussi evoluer a travers leurs interactions avec <b>Guts</b>. <b>Casca</b> par exemple, le premier lieutenant de <b>Griffith</b>, va decouvrir qu'elle aussi a un <b>Reve</b>.</p>
+<p>La Religion est aussi un autre theme de la serie. A travers de multiple personnage, <b><i>Berserk</i></b> nous parle du fanatisme religieux, de l'intolerence et des antagonismes entre les religions paienne et<br/>
+les religions monotheiste.</p>
+</article>
+<br/>
+<br/>
+<br/>
+<div id="quizImage"><img src="Berserk_Quiz.jpg" alt="Banner of Berserk Quiz" /></div>
+<h1><b>Le Quiz</b></h1>
+<br/>
+<br/>
+<div class="grid">
+    <div id="quiz">
+        <h1>Le Quiz de Berserk</h1>
+        <hr style="margin-bottom: 20px">
+        <p id="question"></p>
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+            </div>
+        <hr style="margin-top: 50px">
+        <footer>
+            <p id="progress">Question x of y</p>
+        </footer>
+    </div>
+</div>
+
+<script src="Quiz_French.js"></script>
+
+</body>
+
+
+</html>
