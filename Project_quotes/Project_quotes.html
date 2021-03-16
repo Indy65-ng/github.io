@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8"/>
+<title>Simple Quotes Generator</title>
+<link rel="stylesheet" type="text/css" href="Project_quotes.css">
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script rel="javascript" type="text/javascript" src="Project_quotes.js"></script>
+
+</head>
+
+
+<body onload="newQuote()">
+
+
+
+<div id="container">
+    <div id="quote-box">
+	    <div class="quote-text">
+		    <i class="fa fa-quote-left" data-icon="fa-quote-left" data-inline="false"></span>></i>
+		    <span id="text"></span>
+		</div>
+		<div class="quote-author">-&nbsp  
+		    <span id="author"></span>
+		</div>
+		<div class="button">
+		    <button class="button" id="new-quote" onclick="newQuote(); changeColor()">New Quote</button>
+		</div>
+	</div>
+	<div class="footer">
+	by Nathan Garcia
+	</div>
+</div>
+
+
+
+</body>
+
+</html>

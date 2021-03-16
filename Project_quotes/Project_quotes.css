@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color:#00FFFF;
+	transition: background-color 2s ease;
+}
+
+div {
+	position: relative;
+	z-index: 2;
+}
+
+#quote-box {
+	border-radius: 3px;
+	position: relative;
+	width: 450px;
+	padding: 40px 50px;
+	display: table;
+	background-color: #FFFFFF;
+}
+
+#quote-box .quote-text {
+	text-align: center;
+	width: 450px;
+	height: auto;
+	clear: both;
+	font-weight: 500;
+	font-size: 1.75em;
+}
+
+#quote-box .quote-text i {
+	font-size: 1em;
+	margin-right: 0.4em;
+}
+
+.fa {
+	background: url('https://api.iconify.design/fa-quote-left.svg') no-repeat center center / contain;
+	content: url('https://api.iconify.design/fa-quote-left.svg?height=14&inline=true');
+    vertical-align: -0.143em;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	transform: translate(0,0);
+	width: 30px;
+	height: 30px;
+	
+}
+
+.fa-quote-left:before {
+	content:"\f10d";
+	font-family: FontAwesome;
+}
+
+#quote-box .quote-author {
+	width: 450px;
+	height: auto;
+	clear: both;
+	padding-top: 20px;
+	font-size: 1em;
+	text-align: right;
+}
+
+#quote-box .button .button#new-quote {
+	float: right;
+}
+
+#quote-box .button .button {
+	height: 38px;
+	border: none;
+	border-radius: 3px;
+	color: #FFFFFF;
+	background-color: #333;
+	outline: none;
+	font-size: 0.85em;
+	padding: 8px 18px 6px 18px;
+	margin-top: 30px;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.footer {
+	width: 450px;
+	text-align: center;
+	display: block;
+	margin: 15px auto 30px auto;
+	font-size: 0.8rem;
+	color: #FFFFFF;
+}
+
+
